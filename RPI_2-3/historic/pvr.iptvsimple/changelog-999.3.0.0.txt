@@ -5,6 +5,12 @@ v3.0.0
 - Fixed support for tvg-logo URLs
 - Enabled the pause button
 
+v2.4.0
+- Cmake: rename find_package kodi to Kodi
+
+v2.3.1
+- Fix includes
+
 v2.3.0
 - Updated to PVR addon API v5.2.0
 
