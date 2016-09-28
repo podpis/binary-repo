@@ -2,6 +2,7 @@
 <addon id="inputstream.smoothstream" version="1.2.3" name="InputStream SmoothStreamingMedia" provider-name="peak3d">
   <requires>
     <import addon="kodi.inputstream" version="1.0.5"/>
+    <import addon="inputstream.mpd" version="1.2.14"/>
   </requires>
   <extension
     point="kodi.inputstream"
