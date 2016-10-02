@@ -9,7 +9,7 @@
     extension=".mpd"
     tags="true"
     listitemprops="license_type|license_key|license_data"
-    library_windows="inputstream.mpd.1.2.14.dll"/>
+    library_windows="inputstream.mpd.dll"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">InputStream Client for MPEG DASH files</summary>
     <description lang="en">InputStream Client for MPEG DASH files</description>

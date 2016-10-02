@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="inputstream.mpd" version="999.1.2.14" name="InputStream MPEG DASH" provider-name="peak3d">
+<addon id="repository.kodinerds_RPi" name="kodinerds.net Binary Addons for Rasperry 1" version="1.0.1" provider-name="L0RE">
+	<extension point="xbmc.addon.repository" name="L0RE">
+		<info compressed="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/RPi/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodinerds/binary-repo/master/RPi/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/RPi/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</summary>
+		<description>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="pvr.zattoo" version="0.1.17" name="Zattoo PVR Client" provider-name="Johannes Trum">
+  <extension point="xbmc.pvrclient" library_linux="pvr.zattoo.so.0.1.17"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+  </extension>
+</addon>
+
+<addon id="inputstream.mpd" version="1.2.14" name="InputStream MPEG DASH" provider-name="peak3d">
   <requires>
     <import addon="kodi.inputstream" version="1.0.5"/>
   </requires>
@@ -12,31 +33,7 @@
   </extension>
 </addon>
 
-<addon id="inputstream.rtmp" version="999.1.0.1" name="RTMP Input" provider-name="spiff">
-  <requires>
-    <import addon="kodi.inputstream" version="1.0.5"/>
-  </requires>
-  <extension point="kodi.inputstream" name="rtmp" protocols="rtmp|rtmpt|rtmpe|rtmpte|rtmps" library_linux="inputstream.rtmp.so.1.0.1"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">InputStream Client for RTMP streams</summary>
-    <description lang="en">InputStream Client for RTMP streams using librtmp</description>
-    <platform>linux</platform>
-  </extension>
-</addon>
-
-<addon id="inputstream.smoothstream" version="999.1.2.3" name="InputStream SmoothStreamingMedia" provider-name="peak3d">
-  <requires>
-    <import addon="kodi.inputstream" version="1.0.5"/>
-  </requires>
-  <extension point="kodi.inputstream" name="smoothstream" extension=".ism" tags="true" listitemprops="license_type|license_key|license_data" library_linux="inputstream.smoothstream.so.1.2.3"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">InputStream Client for SmoothStreamingMedia files</summary>
-    <description lang="en">InputStream Client for SmoothStreamingMedia files</description>
-    <platform>linux</platform>
-  </extension>
-</addon>
-
-<addon id="pvr.iptvsimple.mpls" version="999.3.0.0" name="PVR IPTV Simple Client - Multiple Playlists" provider-name="nightik">
+<addon id="pvr.iptvsimple.mpls" version="3.0.0" name="PVR IPTV Simple Client - Multiple Playlists" provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
     <import addon="xbmc.pvr" version="5.2.0"/>
@@ -186,25 +183,28 @@ https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary
   </extension>
 </addon>
 
-<addon id="pvr.zattoo" version="999.0.1.16" name="Zattoo PVR Client" provider-name="Johannes Trum">
-  <extension point="xbmc.pvrclient" library_linux="pvr.zattoo.so.0.1.16"/>
+<addon id="inputstream.rtmp" version="1.0.1" name="RTMP Input" provider-name="spiff">
+  <requires>
+    <import addon="kodi.inputstream" version="1.0.5"/>
+  </requires>
+  <extension point="kodi.inputstream" name="rtmp" protocols="rtmp|rtmpt|rtmpe|rtmpte|rtmps" library_linux="inputstream.rtmp.so.1.0.1"/>
   <extension point="xbmc.addon.metadata">
+    <summary lang="en">InputStream Client for RTMP streams</summary>
+    <description lang="en">InputStream Client for RTMP streams using librtmp</description>
     <platform>linux</platform>
   </extension>
 </addon>
 
-<addon id="repository.kodinerds_RPi" name="kodinerds.net Binary Addons for Rasperry 1" version="1.0.1" provider-name="L0RE">
-	<extension point="xbmc.addon.repository" name="L0RE">
-		<info compressed="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/RPi/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/kodinerds/binary-repo/master/RPi/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/RPi/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</summary>
-		<description>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
+<addon id="inputstream.smoothstream" version="1.2.3" name="InputStream SmoothStreamingMedia" provider-name="peak3d">
+  <requires>
+    <import addon="kodi.inputstream" version="1.0.5"/>
+  </requires>
+  <extension point="kodi.inputstream" name="smoothstream" extension=".ism" tags="true" listitemprops="license_type|license_key|license_data" library_linux="inputstream.smoothstream.so.1.2.3"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">InputStream Client for SmoothStreamingMedia files</summary>
+    <description lang="en">InputStream Client for SmoothStreamingMedia files</description>
+    <platform>linux</platform>
+  </extension>
 </addon>
 
 </addons>

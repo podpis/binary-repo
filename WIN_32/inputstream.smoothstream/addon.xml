@@ -10,7 +10,7 @@
     extension=".ism"
     tags="true"
     listitemprops="license_type|license_key|license_data"
-    library_windows="inputstream.smoothstream.1.2.3.dll"/>
+    library_windows="inputstream.smoothstream.dll"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">InputStream Client for SmoothStreamingMedia files</summary>
     <description lang="en">InputStream Client for SmoothStreamingMedia files</description>
