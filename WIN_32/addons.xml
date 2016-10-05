@@ -10,7 +10,7 @@
     extension=".mpd"
     tags="true"
     listitemprops="license_type|license_key|license_data"
-    library_windows="inputstream.mpd.1.2.14.dll"/>
+    library_windows="inputstream.mpd.dll"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">InputStream Client for MPEG DASH files</summary>
     <description lang="en">InputStream Client for MPEG DASH files</description>
@@ -29,7 +29,7 @@
     extension=".ism"
     tags="true"
     listitemprops="license_type|license_key|license_data"
-    library_windows="inputstream.smoothstream.1.2.3.dll"/>
+    library_windows="inputstream.smoothstream.dll"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">InputStream Client for SmoothStreamingMedia files</summary>
     <description lang="en">InputStream Client for SmoothStreamingMedia files</description>
@@ -187,7 +187,7 @@
   </extension>
 </addon>
 
-<addon id="pvr.zattoo" version="0.1.16" name="Zattoo PVR Client" provider-name="Johannes Trum">
+<addon id="pvr.zattoo" version="0.1.17" name="Zattoo PVR Client" provider-name="Johannes Trum">
   <extension
     point="xbmc.pvrclient"
     library_windows="pvr.zattoo.dll"/>
@@ -196,7 +196,7 @@
   </extension>
 </addon>
 
-<addon id="repository.kodinerds_WIN_32" name="kodinerds.net Binary Addons for Windows" version="1.0.1" provider-name="L0RE">
+<addon id="repository.kodinerds_WIN_32" name="kodinerds.net Binary Addons for Windows" version="1.0.2" provider-name="L0RE">
 	<extension point="xbmc.addon.repository" name="L0RE">
 		<info compressed="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/WIN_32/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/kodinerds/binary-repo/master/WIN_32/addons.xml.md5</checksum>
@@ -206,7 +206,7 @@
 		<summary>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</summary>
 		<description>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</description>
 		<disclaimer></disclaimer>
-		<platform>all</platform>
+		<platform>windx</platform>
 	</extension>
 </addon>
 
