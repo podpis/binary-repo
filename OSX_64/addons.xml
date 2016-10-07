@@ -187,10 +187,8 @@
   </extension>
 </addon>
 
-<addon id="pvr.zattoo" version="0.1.17" name="Zattoo PVR Client" provider-name="Johannes Trum">
-  <extension
-    point="xbmc.pvrclient"
-    library_osx="pvr.zattoo.0.1.17.dylib"/>
+<addon id="pvr.zattoo" version="0.1.18" name="Zattoo PVR Client" provider-name="Johannes Trum">
+  <extension point="xbmc.pvrclient" library_osx="pvr.zattoo.0.1.18.dylib"/>
   <extension point="xbmc.addon.metadata">
     <platform>osx</platform>
   </extension>

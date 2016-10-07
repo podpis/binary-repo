@@ -187,10 +187,8 @@
   </extension>
 </addon>
 
-<addon id="pvr.zattoo" version="0.1.17" name="Zattoo PVR Client" provider-name="Johannes Trum">
-  <extension
-    point="xbmc.pvrclient"
-    library_windows="pvr.zattoo.dll"/>
+<addon id="pvr.zattoo" version="0.1.18" name="Zattoo PVR Client" provider-name="Johannes Trum">
+  <extension point="xbmc.pvrclient" library_windows="pvr.zattoo.dll"/>
   <extension point="xbmc.addon.metadata">
     <platform>windows</platform>
   </extension>
