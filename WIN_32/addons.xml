@@ -201,5 +201,11 @@
 	</extension>
 </addon>
 
+<addon id="pvr.zattoo" version="0.1.21" name="Zattoo PVR Client" provider-name="Johannes Trum">
+  <extension point="xbmc.pvrclient" library_windows="pvr.zattoo.dll"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>windows</platform>
+  </extension>
+</addon>
 
 </addons>
