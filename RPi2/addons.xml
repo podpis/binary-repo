@@ -56,7 +56,7 @@
     <c-pluff version="0.1"/>
     <import addon="xbmc.pvr" version="5.2.0"/>
   </requires>
-  <extension point="xbmc.pvrclient" library_linux="pvr.iptvsimple.so.3.0.0"/>
+  <extension point="xbmc.pvrclient" library_linux="pvr.iptvsimple.mpls.so.3.0.0"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="af_ZA">Kodi PVR byvoegsel vir IPTV ondersteuning. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="bg_BG">Kodi ПВР добавка за поддръжка на IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
