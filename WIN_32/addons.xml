@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="inputstream.mpd" version="1.2.17" name="InputStream MPEG DASH" provider-name="peak3d">
+<addon id="inputstream.mpd" version="1.2.18" name="InputStream MPEG DASH" provider-name="peak3d">
   <requires>
-    <import addon="kodi.inputstream" version="1.0.5"/>
+    <import addon="kodi.inputstream" version="1.0.6"/>
   </requires>
   <extension point="kodi.inputstream" name="mpd" extension=".mpd" tags="true" listitemprops="license_type|license_key|license_data" library_windows="inputstream.mpd.dll"/>
   <extension point="xbmc.addon.metadata">
@@ -12,10 +12,10 @@
   </extension>
 </addon>
 
-<addon id="inputstream.smoothstream" version="1.2.3" name="InputStream SmoothStreamingMedia" provider-name="peak3d">
+<addon id="inputstream.smoothstream" version="1.2.4" name="InputStream SmoothStreamingMedia" provider-name="peak3d">
   <requires>
-    <import addon="kodi.inputstream" version="1.0.5"/>
-    <import addon="inputstream.mpd" version="1.2.14"/>
+    <import addon="kodi.inputstream" version="1.0.6"/>
+    <import addon="inputstream.mpd" version="1.2.18"/>
   </requires>
   <extension
     point="kodi.inputstream"
