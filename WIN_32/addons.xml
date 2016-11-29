@@ -31,14 +31,14 @@
   </extension>
 </addon>
 
-<addon id="pvr.iptvsimple.mpls" version="3.0.0" name="PVR IPTV Simple Client - Multiple Playlists" provider-name="nightik">
+<addon id="pvr.iptvsimple.mpls" version="3.0.1" name="PVR IPTV Simple Client - Multiple Playlists" provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
-    <import addon="xbmc.pvr" version="5.2.0"/>
+    <import addon="xbmc.pvr" version="5.2.1"/>
   </requires>
   <extension
     point="xbmc.pvrclient"
-    library_windows="pvr.iptvsimple.dll"/>
+    library_windows="pvr.iptvsimple.mpls.dll"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="af_ZA">Kodi PVR byvoegsel vir IPTV ondersteuning. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="bg_BG">Kodi ПВР добавка за поддръжка на IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
@@ -195,7 +195,7 @@
 	</extension>
 </addon>
 
-<addon id="pvr.zattoo" version="0.1.22" name="Zattoo PVR Client" provider-name="Johannes Trum">
+<addon id="pvr.zattoo" version="0.1.23" name="Zattoo PVR Client" provider-name="Johannes Trum">
   <extension point="xbmc.pvrclient" library_windows="pvr.zattoo.dll"/>
   <extension point="xbmc.addon.metadata">
     <platform>windows</platform>
