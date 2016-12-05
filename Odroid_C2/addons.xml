@@ -37,14 +37,48 @@
   </extension>
 </addon>
 
-<addon id="pvr.iptvsimple.mpls" version="3.0.1" name="PVR IPTV Simple Client - Multiple Playlists" provider-name="nightik">
+<addon id="repository.kodinerds_Odroid_C2" name="kodinerds.net Binary Addons for Odroid_C2" version="1.0.3" provider-name="L0RE">
+	<extension point="xbmc.addon.repository" name="L0RE">
+		<info compressed="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/Odroid_C2/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodinerds/binary-repo/master/Odroid_C2/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/Odroid_C2/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</summary>
+		<description>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</description>
+		<disclaimer></disclaimer>
+		<platform>linux</platform>
+	</extension>
+</addon>
+
+<addon id="pvr.zattoo" version="0.1.23" name="Zattoo PVR Client" provider-name="Johannes Trum">
+  <extension point="xbmc.pvrclient" library_linux="pvr.zattoo.so.0.1.23"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+  </extension>
+</addon>
+
+<addon id="inputstream.adaptive" version="1.0.0" name="InputStream Adaptive" provider-name="peak3d">
+  <requires>
+    <import addon="kodi.inputstream" version="1.0.6"/>
+  </requires>
+  <extension point="kodi.inputstream" name="adaptive" extension="" tags="true" listitemprops="license_type|license_key|license_data|manifest_type" library_linux="inputstream.adaptive.so.1.0.0"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">InputStream client for adaptive streams</summary>
+    <description lang="en">InputStream client for adaptive streams</description>
+    <platform>linux</platform>
+  </extension>
+</addon>
+
+<addon id="pvr.iptvsimple.multi" version="3.0.1" name="PVR IPTV Simple Client Multiple Playlists" provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
     <import addon="xbmc.pvr" version="5.2.1"/>
   </requires>
-  <extension point="xbmc.pvrclient" library_linux="pvr.iptvsimple.mpls.so.3.0.1"/>
+  <extension point="xbmc.pvrclient" library_linux="pvr.iptvsimple.multi.so.3.0.1"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="af_ZA">Kodi PVR byvoegsel vir IPTV ondersteuning. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="az_AZ">IPTV dəstəyi üçün Kodi PVR əlavəsini yükləyin.&#10;https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="bg_BG">Kodi ПВР добавка за поддръжка на IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="ca_ES">Complement PVR de Kodi per al suport d'IPTV https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="cs_CZ">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
@@ -58,12 +92,11 @@
     <summary lang="en_US">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="es_AR">Addon Kodi PVR  para soporte IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="es_ES">Kodi PVR addon para soporte IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
-    <summary lang="fi_FI">Kodi PVR lisäosa IPTV tuella. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="fi_FI">Kodin PVR-lisäosa IPTV-tuella. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="fr_CA">Addiciel de numériscope Kodi pour la prise en charge de IPTV https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="fr_FR">Extension enregistreur vidéo (PVR) pour la gestion IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="gl_ES">Complemento PVR do Kodi de soporte á IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
-    <summary lang="he_IL">לקוח טלוויזיה חיה עם תמיכה ב־IPTV.
-https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="he_IL">לקוח טלוויזיה חיה עם תמיכה ב־IPTV.&#10;https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="hr_HR">Kodi PVR dodatak za IPTV podršku. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="hu_HU">Kodi PVR kiegészítő az IPTV támogatáshoz. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="id_ID">Pengaya PVR Kodi untuk dukungan IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
@@ -80,7 +113,7 @@ https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary
     <summary lang="nl_NL">Kodi PVR add-on voor IPTV ondersteuning. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="pl_PL">Klient telewizyjny dla telewizji internetowej. Więcej informacji o dodatku:  https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="pt_BR">Addon de PVR no Kodi com suporte a IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
-    <summary lang="pt_PT">Extra Kodi PVR para suporte a IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="pt_PT">Add-on Kodi PVR para suporte a IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="ro_RO">Supliment PVR Kodi  pentru suport IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="ru_RU">Kodi PVR аддон для поддержки IPTV.  https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="sk_SK">Kodi PVR doplnok umožňujúci IPTV podporu. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
@@ -93,7 +126,7 @@ https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary
     <summary lang="zh_CN">Kodi PVR 插件需要 IPTV 支持。https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <description lang="af_ZA">IPTV Simple PVR kliënt ondersteun M3U speellyste, stroom van lewendige TV vir multisaai / unisaai bronne, luister na radio kanale en EPG.</description>
     <description lang="bg_BG">IPTV обикновен ПВР клиент. Поддържа m3u плейлисти, поточна телевизия за мултикаст/уникаст източници, слушане на радио канали и електронен програмен справочник.</description>
-    <description lang="ca_ES">Client senzill per a IPTV PVR amb support per a llistes de reproducció m3u, streaming de TV en viu multicast/unicast, reproducció de canals de ràdio i EPG.</description>
+    <description lang="ca_ES">Client senzill per a IPTV PVR compatible amb les llistes de reproducció m3u, streaming de TV en directe multicast/unicast, reproducció de canals de ràdio i EPG.</description>
     <description lang="cs_CZ">IPTV Simple PVR Client podporuje m3u playlisty, streemování  TV pro multicast/unicast zdroje, poslouchání Radia a EPG.</description>
     <description lang="cy_GB">Cleient IPTV Simple PVR  Mae'n cynnal rhestrau m3u, ffrydio Teledu Byw o ffynonellau darlledu eang ac unigol, gwrando ar sianeli Radio ac Amserlen Rhaglenni.</description>
     <description lang="da_DK">IPTV Simpel PVR klient understøttelse M3U-afspilningslister, streaming af direkte tv til multicast/unicast kilder, lytte til radio kanaler og EPG.</description>
@@ -103,10 +136,9 @@ https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary
     <description lang="en_GB">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
     <description lang="en_NZ">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
     <description lang="en_US">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
-    <description lang="es_AR">Cliente simple PVR IPTV.  Reproduce de TV en Vivo multicast/unicast y listas m3u8
- . reproduce tambien canales de radio y GEP</description>
+    <description lang="es_AR">Cliente simple PVR IPTV.  Reproduce de TV en Vivo multicast/unicast y listas m3u8&#10; . reproduce tambien canales de radio y GEP</description>
     <description lang="es_ES">El cliente PVR IPTV Simple soporta listas M3U, reproducción de TV en Vivo para origenes multicast/unicast, escucha de canales de radio y EPG</description>
-    <description lang="fi_FI">IPTV Simple PVR Client tukee m3u soittolistoja, multicast/unicast LIVE TV toistoa, radiokanavia jaohjelmaopasta.</description>
+    <description lang="fi_FI">IPTV Simple PVR Client tukee m3u-toistolistoja, multicast/unicast-tv-lähetysten toistoa, radiokanavia ja ohjelmaopasta.</description>
     <description lang="fr_CA">Client de numériscope simple pour IPTV, prenant en charge les listes de lecture m3u, la diffusion en continu des télés en direct pour les sources de multidiffusion et de monodiffusion, l'écoute de chaînes radio, et le GÉP.</description>
     <description lang="fr_FR">Le client enregistreur vidéo (PVR) IPTV Simple gère les listes de lecture M3U, la diffusion en continu de la TV en direct en mono ou multidiffusion, l'écoute des chaînes radio et le guide électronique des programmes TV.</description>
     <description lang="gl_ES">O cliente PVR simple de IPTV soporta listaxes m3u, transmisión de TV en directo para fontes multicast/unicast, escoita de canles de Radio e Guía.</description>
@@ -151,7 +183,7 @@ https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary
     <disclaimer lang="en_US">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
     <disclaimer lang="es_AR">Este es un software inestable. El autor no se hace responsable por reproducciones fallidas, datos de GEP incorrectos, horas perdidas o cualquier otro efecto indeseable.</disclaimer>
     <disclaimer lang="es_ES">Este es un software inestable! El autor no se hace responsable de reproducciones fallidas, datos de EPG incorrectos, horas perdidas o cualquier otro efecto indeseado.</disclaimer>
-    <disclaimer lang="fi_FI">Tämä on epävakaa ohjelma! Ohjelman kirjoittavat eivät vastaa millään tavalla epäonnistuneista toistoista, vääristä EPG ajoista, hukatusta ajasta tai muista ei-halutuista tapahtumista.</disclaimer>
+    <disclaimer lang="fi_FI">Tämä on epävakaa ohjelma! Ohjelman kirjoittajat eivät vastaa millään tavalla epäonnistuneista toistoista, vääristä EPG-ajoista, hukatusta ajasta tai muista ei-halutuista tapahtumista.</disclaimer>
     <disclaimer lang="fr_CA">Ce logiciel est instable! Les auteurs ne sont aucunement responsables des lectures  défaillantes, d'horaires erronés du GÉP, des heures perdues ou tout autre effet indésirable.</disclaimer>
     <disclaimer lang="fr_FR">Logiciel en cours d'élaboration ! Les auteurs ne sont en aucun cas responsables de l'échec des enregistrements, programmations défectueuses, temps perdu ou autres effets indésirables.</disclaimer>
     <disclaimer lang="gl_ES">Este software non é estábel! Os autores non se fan responsábeis dos erros na reproducción, horarios incorrectos na Guía, horas vencidas, e otros efectos non desexados.</disclaimer>
@@ -183,39 +215,6 @@ https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary
     <disclaimer lang="szl">To je niystabilny softwer! Autōry niy sōm ôdpedzialne za niypodarzōne graniy, niynŏleżne godziny EPG, stracōne godziny i inksze niychciane efekty.</disclaimer>
     <disclaimer lang="tr_TR">Bu kararsız bir yazılımdır! Yazanlar oynatma hatası, yanlış EPG zamanları, harcanmış saatler ya da diğer etkilerden sorumlu değildir.</disclaimer>
     <disclaimer lang="zh_CN">这是不稳定版的软件！作者不对录像失败、错误定时造成时间浪费或其它不良影响负责。</disclaimer>
-    <platform>linux</platform>
-  </extension>
-</addon>
-
-<addon id="repository.kodinerds_Odroid_C2" name="kodinerds.net Binary Addons for Odroid_C2" version="1.0.3" provider-name="L0RE">
-	<extension point="xbmc.addon.repository" name="L0RE">
-		<info compressed="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/Odroid_C2/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/kodinerds/binary-repo/master/Odroid_C2/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/Odroid_C2/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</summary>
-		<description>Most of the addon have been abandoned, and Patched by someone new. Or have been Found without someone loosing them</description>
-		<disclaimer></disclaimer>
-		<platform>linux</platform>
-	</extension>
-</addon>
-
-<addon id="pvr.zattoo" version="0.1.23" name="Zattoo PVR Client" provider-name="Johannes Trum">
-  <extension point="xbmc.pvrclient" library_linux="pvr.zattoo.so.0.1.23"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>linux</platform>
-  </extension>
-</addon>
-
-<addon id="inputstream.adaptive" version="1.0.0" name="InputStream Adaptive" provider-name="peak3d">
-  <requires>
-    <import addon="kodi.inputstream" version="1.0.6"/>
-  </requires>
-  <extension point="kodi.inputstream" name="adaptive" extension="" tags="true" listitemprops="license_type|license_key|license_data|manifest_type" library_linux="inputstream.adaptive.so.1.0.0"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">InputStream client for adaptive streams</summary>
-    <description lang="en">InputStream client for adaptive streams</description>
     <platform>linux</platform>
   </extension>
 </addon>
