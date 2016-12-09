@@ -25,14 +25,12 @@
   </extension>
 </addon>
 
-<addon id="pvr.iptvsimple.mpls" version="3.0.1" name="PVR IPTV Simple Client - Multiple Playlists" provider-name="nightik">
+<addon id="pvr.iptvsimple.multi" version="3.0.1" name="PVR IPTV Simple Client - Multiple Playlists" provider-name="nightik">
   <requires>
     <c-pluff version="0.1"/>
     <import addon="xbmc.pvr" version="5.2.1"/>
   </requires>
-  <extension
-    point="xbmc.pvrclient"
-    library_windows="pvr.iptvsimple.mpls.dll"/>
+  <extension point="xbmc.pvrclient" library_windows="pvr.iptvsimple.multi.dll"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="af_ZA">Kodi PVR byvoegsel vir IPTV ondersteuning. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="bg_BG">Kodi ПВР добавка за поддръжка на IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
@@ -214,7 +212,7 @@
   </extension>
 </addon>
 
-<addon id="inputstream.adaptive" version="1.0.0" name="InputStream Adaptive" provider-name="peak3d">
+<addon id="inputstream.adaptive" version="1.0.3" name="InputStream Adaptive" provider-name="peak3d">
   <requires>
     <import addon="kodi.inputstream" version="1.0.6"/>
   </requires>
