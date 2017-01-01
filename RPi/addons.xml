@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="inputstream.mpd" version="1.2.17" name="InputStream MPEG DASH" provider-name="peak3d">
-  <requires>
-    <import addon="kodi.inputstream" version="1.0.5"/>
-  </requires>
-  <extension point="kodi.inputstream" name="mpd" extension=".mpd" tags="true" listitemprops="license_type|license_key|license_data" library_linux="inputstream.mpd.so.1.2.17"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">InputStream Client for MPEG DASH files</summary>
-    <description lang="en">InputStream Client for MPEG DASH files</description>
-    <platform>linux</platform>
-  </extension>
-</addon>
-
 <addon id="inputstream.rtmp" version="1.0.3" name="RTMP Input" provider-name="spiff">
   <requires>
     <import addon="kodi.inputstream" version="1.0.6"/>
@@ -20,18 +8,6 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">InputStream Client for RTMP streams</summary>
     <description lang="en">InputStream Client for RTMP streams using librtmp</description>
-    <platform>linux</platform>
-  </extension>
-</addon>
-
-<addon id="inputstream.smoothstream" version="1.2.3" name="InputStream SmoothStreamingMedia" provider-name="peak3d">
-  <requires>
-    <import addon="kodi.inputstream" version="1.0.5"/>
-  </requires>
-  <extension point="kodi.inputstream" name="smoothstream" extension=".ism" tags="true" listitemprops="license_type|license_key|license_data" library_linux="inputstream.smoothstream.so.1.2.3"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">InputStream Client for SmoothStreamingMedia files</summary>
-    <description lang="en">InputStream Client for SmoothStreamingMedia files</description>
     <platform>linux</platform>
   </extension>
 </addon>
