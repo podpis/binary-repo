@@ -26,11 +26,11 @@
 	</extension>
 </addon>
 
-<addon id="pvr.zattoo" version="0.1.27" name="Zattoo PVR Client" provider-name="Johannes Trum, René Bühlmann">
+<addon id="pvr.zattoo" version="0.1.28" name="Zattoo PVR Client" provider-name="Johannes Trum, René Bühlmann">
   <requires>
     <import addon="xbmc.pvr" version="5.2.1"/>
   </requires>
-  <extension point="xbmc.pvrclient" library_linux="pvr.zattoo.so.0.1.27"/>
+  <extension point="xbmc.pvrclient" library_linux="pvr.zattoo.so.0.1.28"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="de_DE">Kodi-PVR-Client für Zattoo</summary>
     <summary lang="en_AU">Kodi's frontend for Zattoo</summary>
