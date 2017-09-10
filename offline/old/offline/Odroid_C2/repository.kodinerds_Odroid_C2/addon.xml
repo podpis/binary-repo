@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.kodinerds_Odroid_C2" name="kodinerds.net Binary Addons for Odroid_C2-aarch64" version="1.0.6" provider-name="vdr.tuxnet, L0RE">
+	<extension point="xbmc.addon.repository" name="vdr.tuxnet, L0RE">
+		<info compressed="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/Odroid_C2/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodinerds/binary-repo/master/Odroid_C2/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/binary-repo/master/Odroid_C2/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>This repo will be discontinued</summary>
+		<description>This repo supports the Odroid_C2 aarch64 device only, don't install this on other platforms than linux/aarch64.
+		Use this, on other AML S905 aarch64 based devices, at your own risk!
+		We are not responsible for any damage, data loss or system instability!</description>
+		<disclaimer>Some parts of this addons may not be legal in your country of residence, please check with your local laws before installing.</disclaimer>
+		<platform>linux</platform>
+	</extension>
+</addon>
